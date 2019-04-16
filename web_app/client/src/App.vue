@@ -9,6 +9,7 @@
 <script>
 import Navbar from '@/components/support/Navbar';
 import Footer from '@/components/support/Footer';
+
 export default {
   name: 'App',
   components: {
