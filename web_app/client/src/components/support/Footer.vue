@@ -24,7 +24,7 @@ export default {
 <style>
 footer {
   height: 200px;
-  background-color: #28566c;
+  background-color: #A91DEB;
 }
 .footer_fix {
   display: flex;
