@@ -1,7 +1,17 @@
 <template>
   <div id='main_div'>
-    <div>
+
+    <div class='nav_div'>
+      <ul>
+        <li class="nav-item">
+          <router-link class="font nav-link" to="/">HOME</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link class="font nav-link" to="/About">ABOUT</router-link>
+        </li>
+      </ul>
     </div>
+
     <header>
       <div class='title_div'>
         <h2>Barbarian Study</h2>
@@ -32,6 +42,10 @@ header {
   background-position: right center;
 }
 
+.nav_div {
+  background-color: #A91DEB;
+}
+
 .title_div {
   height: 650px;
   display: flex;
@@ -46,4 +60,23 @@ h2 {
   padding: 20px;
   border-radius: 15px;
 }
+
+ul {
+  list-style-type: none;
+  color: black;
+  margin-top: 250px;
+}
+a {
+  color: #FFF;
+  font-size: 30px;
+  text-decoration: none;
+  line-height: 30px;
+}
+
+a:hover {
+  color: #FFCC33;
+  text-decoration: none;
+}
+
+
 </style>
