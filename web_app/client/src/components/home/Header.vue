@@ -13,9 +13,10 @@
     </div>
 
     <header>
-      <div class='title_div'>
+      <img src='../../assets/img/barbarian_one.jpg'>
+      <!-- <div class='title_div'>
         <h2>Barbarian Study</h2>
-      </div>
+      </div> -->
     </header>
   </div>
 </template>
@@ -33,14 +34,22 @@
   grid-template-columns: 20% 80%;
 }
 
-header {
-  height: 650px;
-  object-fit: contain;
-  background-image: url('../../assets/img/barbarian_one.jpg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right center;
+img {
+  width: 100%;
+  height: auto;
 }
+
+/* header {
+  width: 100%;
+  height: auto; */
+  /* height: 650px; */
+  /* object-fit: contain; */
+  /* background-image: url('../../assets/img/barbarian_one.jpg'); */
+  /* background-size: contain; */
+  /* background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center; */
+/* } */
 
 .nav_div {
   background-color: #A91DEB;
@@ -76,6 +85,14 @@ a {
 a:hover {
   color: #FFCC33;
   text-decoration: none;
+}
+
+@media only all and (max-width: 768px){
+
+  #main_div {
+    grid-template-columns: 1fr;
+  }
+
 }
 
 
