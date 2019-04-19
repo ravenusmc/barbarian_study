@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Navbar/>
 
     <!-- Header area -->
     <div class='about_header'>
@@ -57,8 +58,13 @@
 </template>
 
 <script>
+import Navbar from '@/components/support/Navbar';
+
 export default {
   name: 'About',
+  components: {
+    Navbar,
+  }
 };
 </script>
 
