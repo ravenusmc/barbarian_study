@@ -2,21 +2,26 @@
   <div id='main_div'>
 
     <div class='nav_div'>
-      <ul>
-        <li class="nav-item">
-          <router-link class="font nav-link" to="/">HOME</router-link>
-        </li>
-        <li class="nav-item">
-          <router-link class="font nav-link" to="/About">ABOUT</router-link>
-        </li>
-      </ul>
+      <div class='eagle_image'>
+        <img src='../../assets/img/eagle.png'>
+      </div>
+      <div class='sub_nav_div'>
+        <ul>
+          <li class="nav-item">
+            <router-link class="font nav-link" to="/">HOME</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="font nav-link" to="/About">ABOUT</router-link>
+          </li>
+        </ul>
+      </div>
+      <div class='eagle_image'>
+        <img src='../../assets/img/germanic.png'>
+      </div>
     </div>
 
     <header>
       <img src='../../assets/img/barbarian_one.jpg'>
-      <!-- <div class='title_div'>
-        <h2>Barbarian Study</h2>
-      </div> -->
     </header>
   </div>
 </template>
@@ -31,7 +36,7 @@
 
 #main_div {
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 15% 85%;
 }
 
 img {
@@ -39,20 +44,13 @@ img {
   height: auto;
 }
 
-/* header {
-  width: 100%;
-  height: auto; */
-  /* height: 650px; */
-  /* object-fit: contain; */
-  /* background-image: url('../../assets/img/barbarian_one.jpg'); */
-  /* background-size: contain; */
-  /* background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center; */
-/* } */
-
 .nav_div {
   background-color: #A91DEB;
+}
+
+.eagle_image {
+  margin-top: 30%;
+  background-color: rgba(0,0,0,0.5);
 }
 
 .title_div {
@@ -70,16 +68,21 @@ h2 {
   border-radius: 15px;
 }
 
+.sub_nav_div {
+  margin-top: -205px;
+}
+
 ul {
   list-style-type: none;
   color: black;
   margin-top: 250px;
 }
+
 a {
   color: #FFF;
   font-size: 30px;
   text-decoration: none;
-  line-height: 30px;
+  line-height: 50px;
 }
 
 a:hover {
