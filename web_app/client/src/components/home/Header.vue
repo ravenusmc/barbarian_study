@@ -3,7 +3,7 @@
 
     <div class='nav_div'>
       <div class='eagle_image'>
-        <img src='../../assets/img/eagle2.jpg'>
+        <img class='spqr_eagle' src='../../assets/img/eagle3.jpg'>
       </div>
       <div class='sub_nav_div'>
         <ul>
@@ -41,6 +41,10 @@
   display: grid;
   grid-template-columns: 15% 85%;
 }
+
+/* .spqr_eagle {
+  mix-blend-mode: multiply;
+} */
 
 img {
   width: 100%;
