@@ -11,6 +11,9 @@
             <router-link class="font nav-link" to="/">HOME</router-link>
           </li>
           <li class="nav-item">
+            <router-link class="font nav-link" to="/Data">DATA</router-link>
+          </li>
+          <li class="nav-item">
             <router-link class="font nav-link" to="/About">ABOUT</router-link>
           </li>
         </ul>
