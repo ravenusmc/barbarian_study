@@ -3,7 +3,7 @@
 
     <div class='nav_div'>
       <div class='eagle_image'>
-        <img src='../../assets/img/eagle.png'>
+        <img src='../../assets/img/eagle2.jpg'>
       </div>
       <div class='sub_nav_div'>
         <ul>
