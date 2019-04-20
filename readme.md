@@ -3,11 +3,11 @@
 
 From time to time I like to look at quora.com and browse some of the questions
 that people usually ask. Recently, as I was doing this, someone asked: Why
-did the Romans never take over Germania. The answerer gave a long response which
-I will not get into here. Just to say that in his response he looked at data, from
-wikipedia, that showed how many battles the Romans lost against the Germanic
-barbarians. Thus, I decided to web scrape this data and make a simple project
-out of it.
+did the Romans never take over Germania. The individual who answered the question
+gave a long response which I will not get into here. Just to say that in his
+response he looked at data, from wikipedia, that showed how many battles the
+Romans lost against the Germanic barbarians. Thus, I decided to web scrape this
+data and make a simple project out of it.
 
 The site that I will be web scraping is this one:
 https://en.wikipedia.org/wiki/List_of_the_Germanic_Wars
