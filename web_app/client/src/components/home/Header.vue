@@ -42,10 +42,6 @@
   grid-template-columns: 15% 85%;
 }
 
-/* .spqr_eagle {
-  mix-blend-mode: multiply;
-} */
-
 img {
   width: 100%;
   height: auto;
