@@ -1,18 +1,21 @@
 <template>
   <div>
     <Navbar/>
-    
-    <h1>Data Page</h1>
+    <Header/>
+
+
   </div>
 </template>
 
 <script>
 import Navbar from '@/components/support/Navbar';
+import Header from '@/components/data/Header';
 
 export default {
   name: 'Data',
   components: {
     Navbar,
+    Header
   }
 }
 </script>
