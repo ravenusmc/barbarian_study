@@ -2,6 +2,7 @@
   <div>
     <Navbar/>
     <Header/>
+    <ColorChart/>
 
 
   </div>
@@ -10,12 +11,14 @@
 <script>
 import Navbar from '@/components/support/Navbar';
 import Header from '@/components/data/Header';
+import ColorChart from '@/components/data/ColorChart.vue';
 
 export default {
   name: 'Data',
   components: {
     Navbar,
-    Header
+    Header,
+    ColorChart,
   }
 }
 </script>
