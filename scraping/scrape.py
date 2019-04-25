@@ -37,15 +37,71 @@ class Scraping():
                 data_list = []
                 for column in columns:
                     #Getting the actual text out of the html
-                    column_data = column.get_text().replace('\n', '')
+                    column_data = str(column.get_text().replace('\n', ""))
+                    #This process here will start working to convert the date to
+                    #a format that I can work with.
+                    #Checking for a dash in the years
+                    dash_location = column_data.find('–')
+                    time_period_check_CE = column_data.find('A')
+                    time_period_check_BC = column_data.find('B')
+                    time_period_check_c = column_data.find('c.')
+                    if dash_location != -1:
+                        if time_period_check_BC != -1:
+                            year = int(column_data[0:dash_location])
+                            #Turning the year negative
+                            year = year * -1
+                            data_list.append(year)
+                            print(year)
+                        elif time_period_check_CE != -1:
+                            year = int(column_data[0:dash_location])
+                            data_list.append(year)
+                            print(year)
+                        else:
+                           year = int(column_data[0:dash_location])
+                           data_list.append(year)
+                           print(year)
+                    else:
+                        print(column_data)
+                        print(time_period_check_CE)
+                        print(time_period_check_BC)
+                        print(time_period_check_c)
+                        input()
+                        if time_period_check_BC != -1:
+                            #I don't want any white space in my answer so I'm subtracting one from
+                            #the time period check.
+                            stopping_value = time_period_check_BC - 1
+                            year = int(column_data[0:stopping_value])
+                            #Turning the year negative
+                            year = year * -1
+                            data_list.append(year)
+                            print(year)
+                        elif time_period_check_CE != -1:
+                            #I don't want any white space in my answer so I'm subtracting one from
+                            #the time period check.
+                            stopping_value = time_period_check_CE - 1
+                            year = int(column_data[0:stopping_value])
+                            print(year)
+                            data_list.append(year)
+                        elif time_period_check_c != -1:
+                            num_list = []
+                            for s in column_data:
+                                if s.isdigit():
+                                    num_list.append(int(s))
+                            print(num_list)
+                        else:
+                            data_list.append(column_data)
+                    print(data_list)
+                    input()
+
+
                     #adding each column to the list.
-                    data_list.append(column_data)
+                    #data_list.append(column_data)
                 #This will ensure that only list that have data are inserted
                 #into the csv file.
                 if data_list:
                     #Adding each list that's built to the csv
                     csv_writer.writerow(data_list)
 
-# scrape = Scraping()
-# scrape.setup_soup()
-# scrape.build_csv_file()
+scrape = Scraping()
+scrape.setup_soup()
+scrape.build_csv_file()
