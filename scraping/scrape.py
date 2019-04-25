@@ -25,7 +25,7 @@ class Scraping():
             #Creating a csv variable
             csv_writer = writer(csv_file)
             #This line will write the rows to the CSV file, the header rows.
-            csv_writer.writerow(["Year", "Name", "Location", "Belligerent_1", "Belligerent_2", "Result"])
+            csv_writer.writerow(["Mod_Year", "Orig_Year", "Name", "Location", "Belligerent_1", "Belligerent_2", "Result"])
             #Getting the table from the wikipedia page
             table = self.soup.find('table', {'class':'wikitable'})
             #Looping through each row to get all of the data
@@ -42,8 +42,9 @@ class Scraping():
                     #a format that I can work with.
                     #Checking for a dash in the years
                     dash_location = column_data.find('–')
-                    time_period_check_CE = column_data.find('A')
-                    time_period_check_BC = column_data.find('B')
+                    ##Checking to see if the date is BC, AD or C.
+                    time_period_check_CE = column_data.find('AD')
+                    time_period_check_BC = column_data.find('BC')
                     time_period_check_c = column_data.find('c.')
                     if dash_location != -1:
                         if time_period_check_BC != -1:
@@ -51,21 +52,18 @@ class Scraping():
                             #Turning the year negative
                             year = year * -1
                             data_list.append(year)
-                            print(year)
                         elif time_period_check_CE != -1:
                             year = int(column_data[0:dash_location])
                             data_list.append(year)
-                            print(year)
                         else:
                            year = int(column_data[0:dash_location])
                            data_list.append(year)
-                           print(year)
                     else:
-                        print(column_data)
-                        print(time_period_check_CE)
-                        print(time_period_check_BC)
-                        print(time_period_check_c)
-                        input()
+                        # print(column_data)
+                        # print(time_period_check_CE)
+                        # print(time_period_check_BC)
+                        # print(time_period_check_c)
+                        # input()
                         if time_period_check_BC != -1:
                             #I don't want any white space in my answer so I'm subtracting one from
                             #the time period check.
@@ -74,28 +72,23 @@ class Scraping():
                             #Turning the year negative
                             year = year * -1
                             data_list.append(year)
-                            print(year)
                         elif time_period_check_CE != -1:
                             #I don't want any white space in my answer so I'm subtracting one from
                             #the time period check.
                             stopping_value = time_period_check_CE - 1
                             year = int(column_data[0:stopping_value])
-                            print(year)
                             data_list.append(year)
                         elif time_period_check_c != -1:
                             num_list = []
                             for s in column_data:
                                 if s.isdigit():
-                                    num_list.append(int(s))
-                            print(num_list)
-                        else:
-                            data_list.append(column_data)
-                    print(data_list)
-                    input()
-
-
+                                    num_list.append(s)
+                            year = "".join(num_list)
+                            data_list.append(int(year))
+                        # else:
+                        #     data_list.append(column_data)
                     #adding each column to the list.
-                    #data_list.append(column_data)
+                    data_list.append(column_data)
                 #This will ensure that only list that have data are inserted
                 #into the csv file.
                 if data_list:
