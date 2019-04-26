@@ -14,7 +14,7 @@ class Data():
         print(self.data.dtypes)
 
     def test(self):
-        print(self.data[(self.data.Mod_Year >= -113) & (self.data.Mod_Year <= 28)])
+        print(self.data[(self.data.Year >= -113) & (self.data.Year <= 28)])
 
 obj = Data()
 obj.basic_info()

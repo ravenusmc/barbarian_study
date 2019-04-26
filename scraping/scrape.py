@@ -87,6 +87,8 @@ class Scraping():
                             data_list.append(int(year))
                         # else:
                         #     data_list.append(column_data)
+                    print(column_data)
+                    input()
                     #adding each column to the list.
                     data_list.append(column_data)
                 #This will ensure that only list that have data are inserted
