@@ -1,22 +1,22 @@
-]Year,Name,Location,Belligerent_1,Belligerent_2,Result
-113–101BC,Cimbrian War,"Central, Southern and Western Europe, Noricum and Gaul",Roman Republic,"Cimbri, Teutons",Decisive Roman victory
-112 BC,Battle of Noreia[1],"Neumarkt,  Austria",Roman Republic,"Cimbri, Teutons, Ambrones",Cimbrian victory
-107 BC,Battle of Agen[2],"Agen,  France",Helvetii,Roman Republic,Decisive Helvetii victory
-105 BC,Battle of Arausio,"Orange, Vaucluse","Cimbri, Teutons",Roman Republic,Decisive Cimbrian and Teutonic victory
-102 BC,Battle of Aquae Sextiae,"Aix-en-Provence, France",Teutons,Roman Republic,Decisive Roman victory
-101 BC,Battle of Vercellae[3],Vercellae in Cisalpine Gaul,Cimbri,Roman Republic,Decisive Roman victory
-58 BC,Battle of Vosges,"Alsace, France",Roman Republic,Suevi,Decisive Roman victory
-57 BC,Battle of the Sabis,"Gaul, modern day Wallonia",Roman Republic,"Nervii, Aduatuci",Roman victory
-16 BC,clades Lolliana,,Roman Empire,"Sicambri, Tencteri, Usipetes",Germanic victory
-11 BC,Battle of the Lupia River,"Lower Lippe River, Germany",Roman Empire,Sicambri,Roman victory
-9 AD,clades Variana,"Teutoburg Forest, Germany","Cherusci, Marsi, Chatti, Bructeri, Chauci, Sicambri, Suevi",Roman Empire,Decisive Germanic victory
-15 AD,Battle at Pontes Longi,"Near Bramsche, Germany","Cherusci, Chatti, Bructeri, Chauci and other tribes",Roman Empire,Inconclusive
+Mod_Year,Orig_Year,Name,Location,Belligerent_1,Belligerent_2,Result
+-113,113–101BC,Cimbrian War,"Central, Southern and Western Europe, Noricum and Gaul",Roman Republic,"Cimbri, Teutons",Decisive Roman victory
+-112,112 BC,Battle of Noreia[1],"Neumarkt,  Austria",Roman Republic,"Cimbri, Teutons, Ambrones",Cimbrian victory
+-107,107 BC,Battle of Agen[2],"Agen,  France",Helvetii,Roman Republic,Decisive Helvetii victory
+-105,105 BC,Battle of Arausio,"Orange, Vaucluse","Cimbri, Teutons",Roman Republic,Decisive Cimbrian and Teutonic victory
+-102,102 BC,Battle of Aquae Sextiae,"Aix-en-Provence, France",Teutons,Roman Republic,Decisive Roman victory
+-101,101 BC,Battle of Vercellae[3],Vercellae in Cisalpine Gaul,Cimbri,Roman Republic,Decisive Roman victory
+-58,58 BC,Battle of Vosges,"Alsace, France",Roman Republic,Suevi,Decisive Roman victory
+-57,57 BC,Battle of the Sabis,"Gaul, modern day Wallonia",Roman Republic,"Nervii, Aduatuci",Roman victory
+-16,16 BC,clades Lolliana,,Roman Empire,"Sicambri, Tencteri, Usipetes",Germanic victory
+-11,11 BC,Battle of the Lupia River,"Lower Lippe River, Germany",Roman Empire,Sicambri,Roman victory
+9,9 AD,clades Variana,"Teutoburg Forest, Germany","Cherusci, Marsi, Chatti, Bructeri, Chauci, Sicambri, Suevi",Roman Empire,Decisive Germanic victory
+15,15 AD,Battle at Pontes Longi,"Near Bramsche, Germany","Cherusci, Chatti, Bructeri, Chauci and other tribes",Roman Empire,Inconclusive
 16,Battle of the Weser River,"Weser River, Germany",Roman Empire,Coalition of Germanic tribes,Roman victory
 16,Battle of the Angrivarian Wall,"Near Porta Westfalica, Germany",Roman Empire,Coalition of Germanic tribes,Roman victory (according to Tacitus)
 28,Battle of Baduhenna Wood,"Heiloo,  Netherlands",Frisii,Roman Empire,Decisive Germanic victory
-166–180,Marcomannic Wars,"Germania along the Upper Danube, Pannonia and Dacia",Coalition of Germanic tribes,Roman Empire,Roman victory
-235–284,Crisis of the Third Century,,"Goths, Alemanni",Roman Empire,
-c. 235,Battle at the Harzhorn,"Lower Saxony,  Germany",Germanic tribes,Roman Empire,Roman victory
+166,166–180,Marcomannic Wars,"Germania along the Upper Danube, Pannonia and Dacia",Coalition of Germanic tribes,Roman Empire,Roman victory
+235,235–284,Crisis of the Third Century,,"Goths, Alemanni",Roman Empire,
+235,c. 235,Battle at the Harzhorn,"Lower Saxony,  Germany",Germanic tribes,Roman Empire,Roman victory
 250,Battle of Philippopolis,"Plovdiv,  Bulgaria",Goths,Roman Empire,Gothic victory
 251,Battle of Abrittus,"Razgrad,  Bulgaria",Roman Empire,Goths,Decisive Gothic victory
 259,Battle of Mediolanum,"Milan,  Italy",Roman Empire,Alemanni,Roman victory
@@ -37,16 +37,16 @@ c. 235,Battle at the Harzhorn,"Lower Saxony,  Germany",Germanic tribes,Roman Em
 356,Battle of Brumath,"Brumath,  France",Roman Empire,Alemanni,Roman victory
 357,Battle of Argentoratum,"Strasbourg,  France",Roman Empire,Alemanni,Decisive Roman victory
 367,Battle of Solicinium,"Southwest-Germany,  Germany",Roman Empire,Alemanni,Roman victory
-367–368,Great Conspiracy,Roman Britain,"Franks, Saxons, Scotti Picts",Roman Empire,control of province reestablished
+367,367–368,Great Conspiracy,Roman Britain,"Franks, Saxons, Scotti Picts",Roman Empire,control of province reestablished
 369,Battle of Noviodunum,"Noviodonum, modern-day Romania",Thervingi,Roman Empire,Roman victory
-376–382,Gothic War,,Goths,Roman Empire,
+376,376–382,Gothic War,,Goths,Roman Empire,
 377,Battle of the Willows,"Moesia,  Bulgaria",Goths,Roman Empire,Draw
 378,Battle of Adrianople,"Edirne, Thracia modern day Turkey",Goths,Roman Empire,Decisive Gothic victory
 378,Battle of Argentovaria,"Colmar,  France",Roman Empire,Lentienses,Decisive Roman victory
 380,Battle of Thessalonica,"Thessalonica,  Greece",Goths,Roman Empire,Gothic victory
 390,Massacre of Thessalonica,"Thessalonica,  Greece",Goths,Thessalonicians,Gothic victory
 394,Battle of the Frigidus,"Vipava River,  France",Eastern Roman Empire,Western Roman Empire,Decisive Eastern Roman victory
-402–403,Gothic War, Italy,Visigoths,Roman Empire,
+402,402–403,Gothic War, Italy,Visigoths,Roman Empire,
 402,Siege of Asti,"Asti,  Italy",Visigoths,Roman Empire,
 402,Battle of Pollentia,"Pollentia,  Italy",Visigoths,Roman Empire,Minor Roman victory
 403,Battle of Verona,"Verona,  Italy",Visigoths,Roman Empire,Roman victory
@@ -59,7 +59,7 @@ c. 235,Battle at the Harzhorn,"Lower Saxony,  Germany",Germanic tribes,Roman Em
 413,Siege of Massilia,"Rome,  Italy",Visigoths,Roman Empire,Roman victory
 419,Battle of the Nervasos Mountains,"Province of León,  Spain","Vandals, Alans","Roman Empire, Suevi",Roman/Suevi victory
 425,Battle of Arles,"Arles, France",Visigoths,"Roman Empire, Huns",Roman-Hunnic victory
-430-431,Siege of Hippo Regius,"Annaba,  Algeria",Vandals,Roman Empire,Draw
+430,Siege of Hippo Regius,"Annaba,  Algeria",Vandals,Roman Empire,Draw
 431,Battle of Helena,"Hélesmes, France",Franks,Roman Empire,Roman victory
 435,Battle of Arles,"Arles, France",Visigoths,"Roman Empire, Huns",Roman-Hunnic victory
 436,Battle of Narbonne,"Narbonne,  France",Roman Empire,Visigoths,Roman victory
@@ -80,7 +80,7 @@ c. 235,Battle at the Harzhorn,"Lower Saxony,  Germany",Germanic tribes,Roman Em
 468,Battle of Bassianae,"Bassianae,  Serbia",Ostrogoths,Huns,Decisive Ostrogothic victory
 468,Battle of Cape Bon,"Cape Bon,  Tunisia",Vandals,Roman Empire,Decisive Vandal victory
 469,Battle of Bolia,Pannonia,"Heruli, Rugii, Scirii, Suevi, Roman Empire",Ostrogoths,Decisive Ostrogothic victory
-c. 469,Battle of Déols,"Déols,  France","Bretons, Roman Empire",Visigoths,Visigothic victory
+469,c. 469,Battle of Déols,"Déols,  France","Bretons, Roman Empire",Visigoths,Visigothic victory
 471,Battle of Arles,"Arles,  France",Roman Empire,Visigoths,Decisive Visigothic victory
 472,Siege of Rome,"Rome,  Italy",Western Roman Empire,Germanic rebels,Decisive Germanic victory
 475,Battle of Ravenna,"Ravenna,  Italy",Western Roman Empire,Germanic rebels,Decisive Germanic victory
@@ -89,18 +89,18 @@ c. 469,Battle of Déols,"Déols,  France","Bretons, Roman Empire",Visigoths,Vis
 489,Battle of Isonzo,"Soča,  Italy","Heruli, Scirii","Ostrogoths, Rugii",Ostrogothic victory
 489,Battle of Verona,"Verona,  Italy","Heruli, Scirii","Ostrogoths, Rugii",Ostrogothic victory
 505,Battle of Horreum Margi,"Ćuprija, Serbia",Ostrogoths,Eastern Roman Empire,Ostrogothic victory
-533–534,Vandalic War,"Carthago,  Tunisia",Byzantine Empire,Vandals,Decisive Byzantine victory
+533,533–534,Vandalic War,"Carthago,  Tunisia",Byzantine Empire,Vandals,Decisive Byzantine victory
 533,Battle of Ad Decimum,"Carthago,  Tunisia",Byzantine Empire,Vandals,Byzantine victory
 533,Battle of Tricamarum,"Carthago,  Tunisia",Byzantine Empire,Vandals,Decisive Byzantine victory
-535–554,Gothic War," Italy,  Croatia",Byzantine Empire,"Ostrogoths, Franks",Decisive Byzantine victory
-537–538,Siege of Rome,"Rome,  Italy",Ostrogoths,Byzantine Empire,Byzantine victory
+535,535–554,Gothic War," Italy,  Croatia",Byzantine Empire,"Ostrogoths, Franks",Decisive Byzantine victory
+537,537–538,Siege of Rome,"Rome,  Italy",Ostrogoths,Byzantine Empire,Byzantine victory
 542,Battle of Faventia,"Faenza,  Italy",Ostrogoths,Byzantine Empire,Ostrogothic victory
 542,Battle of Mucellium,"Mugello,  Italy",Ostrogoths,Byzantine Empire,Ostrogothic victory
 543,Siege of Naples,"Naples,  Italy",Ostrogoths,Byzantine Empire,Ostrogothic victory
 546,Sack of Rome,"Rome,  Italy",Ostrogoths,Byzantine Empire,Ostrogothic victory
-549–550,Siege of Rome,"Rome,  Italy",Ostrogoths,Byzantine Empire,Ostrogothic victory
+549,549–550,Siege of Rome,"Rome,  Italy",Ostrogoths,Byzantine Empire,Ostrogothic victory
 551,Battle of Sena Gallica,"Senigallia,  Italy",Byzantine Empire,Ostrogoths,Decisive Byzantine victory
 552,Battle of Taginae,"Gualdo Tadino,  Italy",Byzantine Empire,Ostrogoths,Decisive Byzantine victory
 553,Battle of Mons Lactarius,"Monti Lattari,  Italy",Byzantine Empire,Ostrogoths,Decisive Byzantine victory
 554,Battle of the Volturnus,"Volturno River,  Italy",Byzantine Empire,"Franks, Alemanni",Decisive Byzantine victory
-569–572,Siege of Ticinum,"Pavia,  Italy","Lombards, Bavarians, Gepids, Saxons",Byzantine Empire,Decisive Germanic victory
+569,569–572,Siege of Ticinum,"Pavia,  Italy","Lombards, Bavarians, Gepids, Saxons",Byzantine Empire,Decisive Germanic victory
