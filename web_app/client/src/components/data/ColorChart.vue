@@ -4,7 +4,7 @@
     <section>
 
       <h2 class='center font'>Quick Battle Study</h2>
-      <p class='center font'>See Who Was Winning More Battles When</p>
+      <p class='center font'>See Who Was Winning More Battles During a Time Period</p>
 
       <div class='colorChart'>
       </div>
@@ -12,6 +12,7 @@
       <form @submit="submitYears">
         <label>Year One</label>
         <input type="number" v-model='yearOne' name="yearOne" placeholder="Enter First Year">
+        <label>Year Two</label>
         <input type="number" v-model="yearTwo" name="yearTwo" placeholder="Enter Second Year">
         <div>
           <button class="btn btn-primary font" type="submit">Submit</button>
@@ -36,7 +37,7 @@ export default {
     submitYears(evt){
       evt.preventDefault();
       console.log('hi Mike')
-      console.log({yearOne: this.yearOne})
+      console.log({yearOne: this.yearOne, yearTwo: this.yearTwo})
     },
   },
 }
