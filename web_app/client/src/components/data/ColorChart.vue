@@ -25,6 +25,9 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex';
+import { mapGetters } from 'vuex';
+
 export default {
   name: 'ColorChart',
   data() {
@@ -34,9 +37,16 @@ export default {
     }
   },
   methods: {
+    ...mapActions([
+      'fetchColorChartData',
+    ]),
     submitYears(evt){
       evt.preventDefault();
-      console.log('hi Mike')
+      const colorChartData = {
+        yearOne: this.yearOne,
+        yearTwo: this.yearTwo,
+      };
+      this.fetchColorChartData(colorChartData);
       console.log({yearOne: this.yearOne, yearTwo: this.yearTwo})
     },
   },

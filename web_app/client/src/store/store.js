@@ -8,19 +8,19 @@ Vue.use(Vuex);
 export const store = new Vuex.Store({
 
   state: {
-    graphOneData: [],
+    colorChartData: [],
   },
 
   getters: {
-    graphOneData: state => state.graphOneData,
+    colorChartData: state => state.colorChartData,
   },
 
   actions: {
-      fetchGraphOneData: ({ commit }, payload) => {
-        const path = 'http://localhost:5000/incidents_per_year';
+      fetchColorChartData: ({ commit }, payload) => {
+        const path = 'http://localhost:5000/colorChart';
         axios.post(path, payload)
         .then((res) => {
-          commit('setGraphOneData', res.data)
+          commit('setColorChartData', res.data)
         })
         .catch((error) => {
           console.log(error);
@@ -29,8 +29,8 @@ export const store = new Vuex.Store({
     },
 
   mutations: {
-    setGraphOneData(state, data) {
-      state.graphOneData = data;
+    setColorChartData(state, data) {
+      state.colorChartData = data;
     },
   },
 
