@@ -16,6 +16,9 @@ class Data():
     def test(self):
         print(self.data[(self.data.Year >= -113) & (self.data.Year <= 28)])
 
+    def buildColorChart(self):
+        pass
+
 obj = Data()
 obj.basic_info()
 obj.test()
