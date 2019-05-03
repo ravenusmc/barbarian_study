@@ -22,6 +22,7 @@ def colorChart():
         post_data = request.get_json()
         yearOne = int(post_data['yearOne'])
         yearTwo = int(post_data['yearTwo'])
+        data.
         return jsonify('pong!')
 
 if __name__ == '__main__':
