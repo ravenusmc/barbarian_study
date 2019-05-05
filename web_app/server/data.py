@@ -12,23 +12,31 @@ class Data():
     # def basic_info(self):
     #     print(self.data.head())
     #     print(self.data.dtypes)
+        #print(self.data.Result.unique())
 
-    def test(self):
-        print(self.data[(self.data.Year >= -113) & (self.data.Year <= 28)])
+    # def test(self):
+    #     print(self.data[(self.data.Year >= -113) & (self.data.Year <= 28)])
 
     def buildColorChart(self, yearOne, yearTwo):
-        new_data = self.data[(self.data.Year >= yearOne) & (self.data.Year <= yearTwo)]
-        data_set_length = len(new_data)
-        print(self.data.Result.unique())
+        #This list will hold all of the distinct Roman Victories.
+        roman_victories = ['Decisive Roman victory', 'Roman victory',
+         'Roman victory (according to Tacitus)',
+         'Decisive Eastern Roman victory', 'Minor Roman victory',
+         'Roman/Suevi victory', 'Roman-Hunnic victory',
+         'Visigothic/Roman victory','Decisive Byzantine victory',
+         'Byzantine victory']
+        new_data_set = self.data[(self.data.Year >= yearOne) & (self.data.Year <= yearTwo)]
+        data_set_length = len(new_data_set)
         return data_set_length
 
 # obj = Data()
 # obj.basic_info()
 # obj.test()
 
-'Decisive Roman victory', 'Roman victory'
- 'Roman victory (according to Tacitus)'
- 'Decisive Eastern Roman victory' 'Minor Roman victory'
- 'Roman/Suevi victory' 'Roman-Hunnic victory'
- 'Visigothic/Roman victory'
- 'Decisive Byzantine victory' 'Byzantine victory'
+#Distinct result column names from where Romans one battles.
+# 'Decisive Roman victory', 'Roman victory'
+#  'Roman victory (according to Tacitus)'
+#  'Decisive Eastern Roman victory' 'Minor Roman victory'
+#  'Roman/Suevi victory' 'Roman-Hunnic victory'
+#  'Visigothic/Roman victory'
+#  'Decisive Byzantine victory' 'Byzantine victory'
