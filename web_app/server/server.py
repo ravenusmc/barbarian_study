@@ -22,8 +22,9 @@ def colorChart():
         post_data = request.get_json()
         yearOne = int(post_data['yearOne'])
         yearTwo = int(post_data['yearTwo'])
-        data.buildColorChart(yearOne, yearTwo)
-        return jsonify('pong!')
+        data_set_length = data.buildColorChart(yearOne, yearTwo)
+        print(data_set_length)
+        return jsonify(data_set_length)
 
 if __name__ == '__main__':
     app.run()
