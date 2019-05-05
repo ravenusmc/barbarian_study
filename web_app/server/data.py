@@ -25,9 +25,17 @@ class Data():
          'Roman/Suevi victory', 'Roman-Hunnic victory',
          'Visigothic/Roman victory','Decisive Byzantine victory',
          'Byzantine victory']
-        new_data_set = self.data[(self.data.Year >= yearOne) & (self.data.Year <= yearTwo)]
-        data_set_length = len(new_data_set)
-        return data_set_length
+        time_frame_data_set = self.data[(self.data.Year >= yearOne) & (self.data.Year <= yearTwo)]
+        data_set_length = len(time_frame_data_set)
+        count = 0
+        for victory in roman_victories:
+            data_set = time_frame_data_set[(time_frame_data_set.Result == victory)]
+            number_of_victories = len(data_set)
+            count = number_of_victories + count
+        data = {}
+        data['Total'] = int(data_set_length)
+        data['Roman Victories'] = int(count)
+        return data
 
 # obj = Data()
 # obj.basic_info()
