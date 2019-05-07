@@ -19,6 +19,10 @@
         </div>
       </form>
 
+      <p>{{ testOne }}</p>
+      <!-- This works -->
+      <p>{{ test }}</p>
+
     </section>
 
   </div>
@@ -34,7 +38,18 @@ export default {
     return {
       yearOne: 0,
       yearTwo: 0,
+      test: {},
     }
+  },
+  computed: {
+    ...mapGetters([
+      'colorChartData',
+  ]),
+  testOne() {
+    console.log('Mike')
+    console.log(this.colorChartData.Total)
+    this.test = this.colorChartData.Total
+  }
   },
   methods: {
     ...mapActions([
@@ -47,7 +62,6 @@ export default {
         yearTwo: this.yearTwo,
       };
       this.fetchColorChartData(colorChartData);
-      console.log({yearOne: this.yearOne, yearTwo: this.yearTwo})
     },
   },
 }

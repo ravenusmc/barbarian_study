@@ -8,7 +8,7 @@ Vue.use(Vuex);
 export const store = new Vuex.Store({
 
   state: {
-    colorChartData: [],
+    colorChartData: {},
   },
 
   getters: {
@@ -20,7 +20,6 @@ export const store = new Vuex.Store({
         const path = 'http://localhost:5000/colorChart';
         axios.post(path, payload)
         .then((res) => {
-          console.log(res.data)
           commit('setColorChartData', res.data)
         })
         .catch((error) => {
