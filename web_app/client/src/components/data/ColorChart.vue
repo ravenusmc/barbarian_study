@@ -19,9 +19,11 @@
         </div>
       </form>
 
-      <p>{{ testOne }}</p>
+      <p>{{ getData }}</p>
       <!-- This works -->
-      <p>{{ test }}</p>
+      <p>{{ totalBattles }}</p>
+      <p>{{ romanWins }} </p>
+
 
     </section>
 
@@ -38,18 +40,18 @@ export default {
     return {
       yearOne: 0,
       yearTwo: 0,
-      test: {},
+      totalBattles: 0,
+      romanWins:0,
     }
   },
   computed: {
     ...mapGetters([
       'colorChartData',
   ]),
-  testOne() {
-    console.log('Mike')
-    console.log(this.colorChartData.Total)
-    this.test = this.colorChartData.Total
-  }
+  getData() {
+    this.totalBattles = this.colorChartData.Total
+    this.romanWins = this.colorChartData.Roman_Victories
+    }
   },
   methods: {
     ...mapActions([

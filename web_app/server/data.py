@@ -34,7 +34,7 @@ class Data():
             count = number_of_victories + count
         data = {}
         data['Total'] = int(data_set_length)
-        data['Roman Victories'] = int(count)
+        data['Roman_Victories'] = int(count)
         return data
 
 # obj = Data()
