@@ -15,7 +15,7 @@
         </div>
       </div>
 
-      <div class='center' v-if='showDataArea'>
+      <div class='data_div center' v-if='showDataArea'>
         <p>The Romans won battles {{ percent }}% of the time</p>
       </div>
 
@@ -64,7 +64,7 @@ export default {
     this.totalBattles = this.colorChartData.Total
     this.romanWins = this.colorChartData.Roman_Victories
     this.percent = (this.romanWins / this.totalBattles) * 100
-    new Intl.NumberFormat('en-US', { maximumSignificantDigits: 8 }).format(this.percent)
+    this.percent = new Intl.NumberFormat('en-US', { maximumSignificantDigits: 4 }).format(this.percent)
     }
   },
   methods: {
@@ -92,6 +92,10 @@ export default {
 
 .center {
   text-align: center;
+}
+
+.data_div {
+  margin-top: 25px;
 }
 
 .colorChart {
