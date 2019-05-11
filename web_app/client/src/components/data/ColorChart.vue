@@ -85,6 +85,7 @@ export default {
 </script>
 
 <style scoped>
+
 .font {
   font-family: 'Cinzel', serif;
   margin-top: 50px;
