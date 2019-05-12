@@ -32,8 +32,7 @@
       <p>{{ getData }}</p>
       <!-- This works -->
       <p>{{ totalBattles }}</p>
-
-
+      
     </section>
 
   </div>
