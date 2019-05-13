@@ -1,6 +1,7 @@
 <template>
   <div>
 
+    <!-- This section will build the color chart -->
     <section>
 
       <h2 class='center font'>Quick Battle Study</h2>
@@ -32,8 +33,9 @@
       <p>{{ getData }}</p>
       <!-- This works -->
       <p>{{ totalBattles }}</p>
-      
+
     </section>
+    <!-- End of color chart section -->
 
   </div>
 </template>
