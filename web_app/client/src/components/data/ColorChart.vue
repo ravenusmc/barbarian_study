@@ -17,7 +17,8 @@
       </div>
 
       <div class='data_div center' v-if='showDataArea'>
-        <p>The Romans won battles {{ percent }}% of the time</p>
+        <p>The Romans won battles {{ percent }}% of the time between the years
+        {{ yearOne }} and {{ yearTwo }}</p>
       </div>
 
       <form @submit="submitYears">
@@ -73,12 +74,16 @@ export default {
     ]),
     submitYears(evt){
       evt.preventDefault();
-      this.showDataArea = true
-      const colorChartData = {
-        yearOne: this.yearOne,
-        yearTwo: this.yearTwo,
-      };
-      this.fetchColorChartData(colorChartData);
+      if (this.yearOne < -113 || this.yearTwo >= 570){
+        alert('Years must be between -113 B.C.E and 570 C.E.')
+      }else {
+        this.showDataArea = true
+        const colorChartData = {
+          yearOne: this.yearOne,
+          yearTwo: this.yearTwo,
+        };
+        this.fetchColorChartData(colorChartData);
+      }
     },
   },
 }
