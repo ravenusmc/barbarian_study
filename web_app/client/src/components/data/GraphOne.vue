@@ -5,6 +5,9 @@
 </template>
 
 <script>
+export default {
+  name: 'ChartOne',
+}
 </script>
 
 <style scoped>
