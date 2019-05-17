@@ -3,6 +3,7 @@
     <Navbar/>
     <Header/>
     <ColorChart/>
+    <hr>
     <ChartOne/>
 
 

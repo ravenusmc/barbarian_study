@@ -76,6 +76,8 @@ export default {
       evt.preventDefault();
       if (this.yearOne < -113 || this.yearTwo >= 570){
         alert('Years must be between -113 B.C.E and 570 C.E.')
+      }else if (this.yearOne == this.yearTwo){
+        alert('The years must be seperated by at least a year')
       }else {
         this.showDataArea = true
         const colorChartData = {
