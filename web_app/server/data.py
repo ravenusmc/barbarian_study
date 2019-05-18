@@ -37,9 +37,45 @@ class Data():
         data['Roman_Victories'] = int(count)
         return data
 
-# obj = Data()
+    def build_Chart_One(self):
+        start_year = -113
+        #This list will hold all of the distinct Roman Victories.
+        roman_victories = ['Decisive Roman victory', 'Roman victory',
+         'Roman victory (according to Tacitus)',
+         'Decisive Eastern Roman victory', 'Minor Roman victory',
+         'Roman/Suevi victory', 'Roman-Hunnic victory',
+         'Visigothic/Roman victory','Decisive Byzantine victory',
+         'Byzantine victory']
+        graphOneData = []
+        #This will keep track of each interval of 75 year period
+        interval = 1
+        while start_year <= 569:
+            sub_data = {}
+            interval_year = start_year + 75
+            time_frame_data_set = self.data[(self.data.Year >= start_year) & (self.data.Year <= interval_year)]
+            #Working on getting the number of roman victories in time frame
+            data_set_length = len(time_frame_data_set)
+            count = 0
+            for victory in roman_victories:
+                data_set = time_frame_data_set[(time_frame_data_set.Result == victory)]
+                number_of_victories = len(data_set)
+                count = number_of_victories + count
+            sub_data['Interval'] = int(interval)
+            sub_data['Count'] = int(count)
+            #I have to increase the interval of start year so I'm not stuck in
+            #the loop forever
+            start_year = start_year + 75
+            sub_data['Count'] = count
+            interval += 1
+            graphOneData.append(sub_data)
+        return graphOneData
+
+
+
+obj = Data()
 # obj.basic_info()
 # obj.test()
+obj.build_Chart_One()
 
 #Distinct result column names from where Romans one battles.
 # 'Decisive Roman victory', 'Roman victory'

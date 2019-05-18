@@ -29,6 +29,7 @@ def colorChart():
 @app.route('/graphOne', methods=['GET'])
 def graphOne():
     data = Data()
+    data.build_Chart_One()
     return jsonify("hi")
 
 if __name__ == '__main__':
