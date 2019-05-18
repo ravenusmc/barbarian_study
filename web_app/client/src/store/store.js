@@ -26,7 +26,16 @@ export const store = new Vuex.Store({
           console.log(error);
         });
       },
-    },
+      fetchGraphOneData: ({commit}) => {
+        const path = 'http://localhost:5000/graphOne';
+        axios.get(path)
+        .then((res) => {
+          console.log(res.data)
+          //commit('setHighestRatedWine', res.data);
+        })
+        console.log('MIKE WORKS')
+      }
+  },
 
   mutations: {
     setColorChartData(state, data) {

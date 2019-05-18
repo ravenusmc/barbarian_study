@@ -16,8 +16,13 @@ import { mapGetters } from 'vuex';
 
 export default {
   name: 'ChartOne',
-  mounted: {
-
+  methods: {
+    ...mapActions([
+      'fetchGraphOneData',
+    ]),
+  },
+  mounted() {
+    this.fetchGraphOneData()
   },
 }
 </script>
