@@ -5,6 +5,12 @@
       <h2 class='font center'>Looking at Roman Victories by  Intervals</h2>
     </div>
 
+    <div>
+     <v-chart :chartData="adjustData"></v-chart>
+     <div>
+     </div>
+    </div>
+
   </div>
 </template>
 
@@ -16,10 +22,48 @@ import { mapGetters } from 'vuex';
 
 export default {
   name: 'ChartOne',
+  data() {
+    return {
+      height: 600,
+      width: 600,
+      xAxisLabels: ['1','2','3','4','5','6','7','8','9','10'],
+      vBarChartData: [],
+    }
+  },
   methods: {
     ...mapActions([
       'fetchGraphOneData',
     ]),
+  },
+  computed: {
+    ...mapGetters([
+      'graphOneData',
+    ]),
+    adjustData() {
+      return this.vBarChartData = {
+        chartType: "vBarChart",
+        label: true,
+        fill: 'green',
+        selector: "vChart",
+        title: "Roman Victories",
+        subtitle: "By 75 Year Intervals",
+        width: 500,
+        height: 500,
+        metric: ["Roman Victories", 'Total Battles'],
+        dim: "Roman Victories",
+        data: this.graphOneData,
+        overrides: {
+          palette: {
+            fill: 'red',
+          },
+        },
+        legends: {
+          enabled: true,
+          height: 5,
+          width: 50
+        },
+      }
+    },
   },
   mounted() {
     this.fetchGraphOneData()

@@ -60,8 +60,8 @@ class Data():
                 data_set = time_frame_data_set[(time_frame_data_set.Result == victory)]
                 number_of_victories = len(data_set)
                 count = number_of_victories + count
-            sub_data['Interval'] = int(interval)
-            sub_data['Count'] = int(count)
+            sub_data['Total Battles'] = int(data_set_length)
+            sub_data['Roman Victories'] = int(count)
             #I have to increase the interval of start year so I'm not stuck in
             #the loop forever
             start_year = start_year + 75

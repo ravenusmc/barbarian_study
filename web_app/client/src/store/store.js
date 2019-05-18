@@ -9,10 +9,12 @@ export const store = new Vuex.Store({
 
   state: {
     colorChartData: {},
+    graphOneData: {},
   },
 
   getters: {
     colorChartData: state => state.colorChartData,
+    graphOneData: state => state.graphOneData,
   },
 
   actions: {
@@ -31,9 +33,8 @@ export const store = new Vuex.Store({
         axios.get(path)
         .then((res) => {
           console.log(res.data)
-          //commit('setHighestRatedWine', res.data);
+          commit('setGraphOneData', res.data);
         })
-        console.log('MIKE WORKS')
       }
   },
 
@@ -41,6 +42,9 @@ export const store = new Vuex.Store({
     setColorChartData(state, data) {
       state.colorChartData = data;
     },
+    setGraphOneData(state, data) {
+      state.graphOneData = data
+    }
   },
 
 })

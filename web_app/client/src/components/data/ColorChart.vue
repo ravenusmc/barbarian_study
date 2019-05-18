@@ -31,9 +31,9 @@
         </div>
       </form>
 
-      <p>{{ getData }}</p>
-      <!-- This works -->
-      <p>{{ totalBattles }}</p>
+      <!-- This works - keep for reference -->
+      <!-- <p>{{ getData }}</p> -->
+      <!-- <p>{{ totalBattles }}</p> -->
 
     </section>
     <!-- End of color chart section -->
