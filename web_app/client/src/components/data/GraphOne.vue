@@ -50,17 +50,28 @@ export default {
         width: 500,
         height: 500,
         metric: ["Roman Victories", 'Total Battles'],
-        dim: "Roman Victories",
+        dim: "Interval",
         data: this.graphOneData,
+        grid: {
+  enabled: true,
+  gridTicks: 25,
+},
         overrides: {
           palette: {
-            fill: 'red',
+            fill: ['#A91DEB', '#4fc08d'],
+            stroke: '#41B883'
+          },
+          x: {
+            ticks: 20
+          },
+          y: {
+            axisWidth: 40,
           },
         },
         legends: {
           enabled: true,
           height: 5,
-          width: 50
+          width: 50,
         },
       }
     },
