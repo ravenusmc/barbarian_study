@@ -5,13 +5,13 @@
       <h2 class='font center'>Looking at Roman Victories by Intervals</h2>
     </div>
 
-    <section id='chartSection'>
+    <section class='chartSection'>
 
       <div>
         <v-chart :chartData="buildGraph"></v-chart>
-      <div>
-
       </div>
+
+      <div>
         <table>
           <tr>
             <th>Interval</th>
@@ -182,11 +182,10 @@ export default {
   text-align: center;
 }
 
-#chartSection {
-  border: 2px solid red;
+.chartSection {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -199,7 +198,7 @@ table {
 td, th {
   border: 1px solid #dddddd;
   text-align: left;
-  padding: 8px;
+  padding: 6px;
   text-align: center;
 }
 
