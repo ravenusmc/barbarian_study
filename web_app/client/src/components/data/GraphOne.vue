@@ -165,4 +165,13 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+
+
+@media only all and (max-width: 950px){
+
+  .chartSection {
+    flex-direction: column;
+  }
+}
+
 </style>
