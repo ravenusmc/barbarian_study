@@ -18,84 +18,44 @@
             <th>Years</th>
           </tr>
           <tr>
-            <td>
-              1
-            </td>
-            <td>
-              -113 B.C.E to -38 B.C.E
-            </td>
+            <td>1</td>
+            <td>-113 B.C.E to -38 B.C.E</td>
           </tr>
           <tr>
-            <td>
-              2
-            </td>
-            <td>
-              -38 B.C.E to 37 C.E
-            </td>
+            <td>2</td>
+            <td>-38 B.C.E to 37 C.E</td>
           </tr>
           <tr>
-            <td>
-              3
-            </td>
-            <td>
-              37 C.E to 112 C.E
-            </td>
+            <td>3</td>
+            <td>37 C.E to 112 C.E</td>
           </tr>
           <tr>
-            <td>
-              4
-            </td>
-            <td>
-              112 C.E to 187 C.E
-            </td>
+            <td>4</td>
+            <td>112 C.E to 187 C.E</td>
           </tr>
           <tr>
-            <td>
-              5
-            </td>
-            <td>
-              187 C.E to 262 C.E
-            </td>
+            <td>5</td>
+            <td>187 C.E to 262 C.E</td>
           </tr>
           <tr>
-            <td>
-              6
-            </td>
-            <td>
-              262 C.E to 337 C.E
-            </td>
+            <td>6</td>
+            <td>262 C.E to 337 C.E</td>
           </tr>
           <tr>
-            <td>
-              7
-            </td>
-            <td>
-              337 C.E to 412 C.E
-            </td>
+            <td>7</td>
+            <td>337 C.E to 412 C.E</td>
           </tr>
           <tr>
-            <td>
-              8
-            </td>
-            <td>
-              412 C.E to 487 C.E
-            </td>
+            <td>8</td>
+            <td>412 C.E to 487 C.E</td>
           </tr>
           <tr>
-            <td>
-              9
-            </td>
-            <td>
-              487 C.E to 562 C.E
-            </td>
+            <td>9</td>
+            <td>487 C.E to 562 C.E</td>
           </tr>
           <tr>
-            <td>
-              10
-            </td>
-            <td>
-              563 C.E to 637 C.E
-            </td>
+            <td>10</td>
+            <td>563 C.E to 637 C.E</td>
           </tr>
         </table>
       </div>
