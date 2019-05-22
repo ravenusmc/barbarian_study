@@ -62,17 +62,23 @@
 
     </section>
 
+    <Analysis/>
+
   </div>
 </template>
 
 <script>
 import * as d3 from 'd3';
+import Analysis from '@/components/data/Analysis';
 import { mapActions } from 'vuex';
 import { mapGetters } from 'vuex';
 //Will use 75 yearly intervals for break down -700 year stretch from -130 BCE to 569 CE.
 
 export default {
   name: 'ChartOne',
+  components: {
+    Analysis,
+  },
   data() {
     return {
       height: 600,
@@ -172,6 +178,7 @@ tr:nth-child(even) {
   .chartSection {
     flex-direction: column;
   }
+
 }
 
 </style>
