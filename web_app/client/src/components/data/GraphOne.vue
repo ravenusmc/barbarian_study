@@ -149,6 +149,7 @@ export default {
 }
 
 .chartSection {
+  padding-bottom: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;

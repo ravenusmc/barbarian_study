@@ -12,7 +12,6 @@
           class='colorChart center'
           style="background-color: gold; margin: 0; color: #a81cea;"
           :style="{width: percent + '%'}">
-          {{ percent }}
         </div>
       </div>
 
@@ -22,6 +21,7 @@
       </div>
 
       <form @submit="submitYears">
+        <p>{{ getData }}</p>
         <label>Year One</label>
         <input type="number" v-model='yearOne' name="yearOne" placeholder="Enter First Year">
         <label>Year Two</label>
@@ -32,7 +32,6 @@
       </form>
 
       <!-- This works - keep for reference -->
-      <!-- <p>{{ getData }}</p> -->
       <!-- <p>{{ totalBattles }}</p> -->
 
     </section>

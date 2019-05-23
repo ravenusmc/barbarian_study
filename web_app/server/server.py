@@ -23,7 +23,6 @@ def colorChart():
         yearOne = int(post_data['yearOne'])
         yearTwo = int(post_data['yearTwo'])
         data_set_length = data.buildColorChart(yearOne, yearTwo)
-        print(data_set_length)
         return jsonify(data_set_length)
 
 @app.route('/graphOne', methods=['GET'])
