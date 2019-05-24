@@ -99,6 +99,15 @@ a:hover {
     grid-template-columns: 1fr;
   }
 
+  .eagle_image {
+    margin-top: 10%;
+  }
+
+  .sub_nav_div {
+    text-align: center;
+    margin-top: -175px;
+  }
+
 }
 
 
