@@ -1,6 +1,8 @@
 <template>
   <div>
-      <nav class="navbar navbar-expand-lg navbar-custom navbar-static-top">
+
+      <!-- <nav class="navbar navbar-expand-lg navbar-custom"> -->
+      <nav class="navbar navbar-dark bg-primary">
         <button class="navbar-toggler" type="button" data-toggle="collapse"
         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
         aria-expanded="false" aria-label="Toggle navigation">
@@ -20,6 +22,7 @@
           </ul>
         </div>
       </nav>
+
   </div>
 </template>
 
