@@ -59,11 +59,6 @@ class Scraping():
                            year = int(column_data[0:dash_location])
                            data_list.append(int(year))
                     else:
-                        # print(column_data)
-                        # print(time_period_check_CE)
-                        # print(time_period_check_BC)
-                        # print(time_period_check_c)
-                        # input()
                         if time_period_check_BC != -1:
                             #I don't want any white space in my answer so I'm subtracting one from
                             #the time period check.

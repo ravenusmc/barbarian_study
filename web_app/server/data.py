@@ -9,14 +9,6 @@ class Data():
     def __init__(self):
         self.data = pd.read_csv('./data/battle_data.csv')
 
-    # def basic_info(self):
-    #     print(self.data.head())
-    #     print(self.data.dtypes)
-        #print(self.data.Result.unique())
-
-    # def test(self):
-    #     print(self.data[(self.data.Year >= -113) & (self.data.Year <= 28)])
-
     def buildColorChart(self, yearOne, yearTwo):
         #This list will hold all of the distinct Roman Victories.
         roman_victories = ['Decisive Roman victory', 'Roman victory',
