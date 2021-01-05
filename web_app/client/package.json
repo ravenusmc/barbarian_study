@@ -11,7 +11,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "d3": "^5.9.2",
     "jsonp": "^0.2.1",
     "v-chart-plugin": "^1.0.1",
